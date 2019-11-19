@@ -1,0 +1,42 @@
+/*
+ _variables.scss
+*/
+/*
+_base.scss
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  text-align: left; }
+
+h1 {
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px #000000; }
+
+/*
+header.scss
+ */
+header ul.topbar {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0 5px 35px;
+  background: black; }
+  header ul.topbar li {
+    margin-left: 5px;
+    text-transform: uppercase; }
+    header ul.topbar li a {
+      font-family: Montserrat, sans-serif;
+      color: #f8f8f8;
+      text-decoration: none;
+      transition: color; }
+      header ul.topbar li a:hover {
+        transition-timing-function: ease-in-out;
+        transition-duration: 600ms;
+        color: #62fff7; }
+
+/*# sourceMappingURL=common.css.map */

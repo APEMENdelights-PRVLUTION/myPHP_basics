@@ -1,0 +1,30 @@
+/*
+_base.scss
+*/
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  text-align: left;
+}
+
+a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px #1a1a1a;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+main{
+  padding-left: 50px ;
+}

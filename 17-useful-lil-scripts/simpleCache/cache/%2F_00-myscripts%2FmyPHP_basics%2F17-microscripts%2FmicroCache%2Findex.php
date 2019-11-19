@@ -1,0 +1,1 @@
+Start Cache example at: 02:30:01<br/>End Cache example at: 02:30:03<br/><br/><a href='clear.php'>Clean the cache</a><br/>

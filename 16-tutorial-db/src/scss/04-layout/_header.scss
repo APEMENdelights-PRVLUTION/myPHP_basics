@@ -1,0 +1,31 @@
+/*
+header.scss
+ */
+
+header{
+  ul.topbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px 0 5px 35px;
+    background: black;
+    li {
+      margin-left: 5px;
+      text-transform: uppercase;
+      a {
+        font-family: Montserrat, sans-serif;
+        color: #f8f8f8;
+        text-decoration: none;
+        transition: color;
+        &:hover{
+          transition-timing-function: ease-in-out;
+          transition-duration: 600ms;
+          color: #62fff7;
+
+        }
+      }
+    }
+  }
+}
