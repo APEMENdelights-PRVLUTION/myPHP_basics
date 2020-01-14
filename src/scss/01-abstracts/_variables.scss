@@ -1,0 +1,45 @@
+/*
+ _variables.scss
+*/
+
+$body-margin-top:   35px;
+$body-margin-side:  1rem;
+$body-margin-bottom: 2 * $body-margin-top;
+$font-fam-base: "Montserrat", sans-serif;
+$font-size-menue: 2rem;
+$bg-color: aqua;
+$black: #1a1a1a;
+$header-height: ($body-margin-side * 2) + $font-size-menue + 0.313rem;
+
+
+
+$success: #35ff00;
+$success-muted: #1e9100;
+$danger: #ff2400;
+$primary-electric: fuchsia;
+
+$btn-border-xs: 1px;
+$btn-border-width-xs: 1px;
+$border-radius-xs: 3px;
+$border-radius: $border-radius-xs;
+$btn-border-radius-xs: $border-radius-xs;
+
+$danger-muted: #9c1400;
+$btn-bg-success: $success;
+$btn-bg-color: #1a1a1a;
+$btn-color: invert($btn-bg-color,100);
+$btn-border-color: darken($success, 80);
+
+
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.85rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+
+$font-fam-base: "Montserrat", sans-serif;
+$font-heading-sm: $font-fam-base;
+
+$link-color: #ff0099;
+$link-color-hover: adjust_hue($link-color, 270deg);
+$headline-color: #f9f9f8;

@@ -1,0 +1,37 @@
+@mixin colorstyle-inkwell{
+  filter: grayscale(1) brightness(0.45) contrast(1.05);
+}
+@mixin colorstyle-tinted{
+  filter: sepia(1) hue-rotate(200deg);
+}
+@mixin colorstyle-sepia{
+  filter: sepia(1) hue-rotate(200deg);
+}
+@mixin colorstyle-inverted{
+  filter: invert(.8);
+}
+@mixin colorstyle-huerotate{
+  filter: hue-rotate(90deg);
+}
+@mixin colorstyle-blur-contrasted{
+  filter: contrast(1.4) saturate(1.8) sepia(.6) blur(5px);}
+
+@mixin pattern-overlay($color, $roughness, $size-patterns){
+  // #000, 45, 4px
+  position:absolute;
+  content:'';
+  top:0;bottom:0;left:0;right:0;
+  $rotation: $roughness/2; // 45/2
+  background-image: linear-gradient(#{$rotation}deg, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+  background-size: $size-patterns $size-patterns;
+}
+//usage
+//@include pattern-overlay(#ff0099, 45, 4px);
+//    position:absolute;
+//    content:'';
+//    top:0;bottom:0;left:0;right:0;
+//    $color: #ff0099;
+//    $rotation: 45/2;
+//    background-image: linear-gradient(#{$rotation}deg, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+//    background-size: 4px 4px;
+//}

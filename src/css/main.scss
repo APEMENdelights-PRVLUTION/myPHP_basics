@@ -1,0 +1,11 @@
+@import "variables";
+@import "../scss/02-base/resets";
+@import "base/basics";
+@import "../scss/04-layout/lists";
+@import "../scss/05-comps/buttons";
+@import "../scss/05-comps/btn-groups";
+
+.main-wrapper{
+  width: 90vw;
+}
+

@@ -1,0 +1,51 @@
+/*
+_base.scss
+*/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #333333;
+  color: #eeeeee;
+  font-family: Monaco, sans-serif;
+}
+
+header{
+  background-color: #1a1a1a;
+  min-height: 5vh;
+  min-width: 100%;
+}
+
+footer{
+  bottom: 0;
+  right:0;
+  position: fixed;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-family: $font-fam-base;
+  color: white;
+  text-align: left;
+  text-shadow: 1px 1px #1a1a1a;
+}
+
+ul {
+  font-family: $font-fam-base;
+
+  li {
+    font-family: $font-fam-base;
+  }
+}
+

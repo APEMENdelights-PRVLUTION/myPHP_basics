@@ -1,0 +1,72 @@
+
+button {
+  border-width: $btn-border-width-xs;
+  background-color: $btn-bg-color;
+
+  &:hover {
+    border-width: $btn-border-width-xs;
+    background-color: invert($btn-bg-color, 100);
+  }
+
+  > a {
+    color: $btn-color;
+    font-weight: 600;
+
+    &:hover{
+      color: $btn-bg-color;
+      font-weight: 600;
+    }
+
+    #btn-tasks {
+      border-radius: $btn-border-radius-xs;
+      border-top-width: $btn-border-xs;
+      border-right-width: $btn-border-xs;
+      border-left-width: $btn-border-xs;
+      border-bottom-width: $btn-border-xs;
+      background-color: $btn-bg-success;
+      border-color: $btn-bg-success;
+    }
+  }
+}
+
+@mixin shining($range-shine, $color-shadow) {
+  $blur: $range-shine * 0.4;
+  box-shadow: 1px 1px $range-shine $blur rgba($color-shadow, 0.4);
+}
+
+
+.btn-shine, .btn-shine-sm{
+  font-family: $font-heading-sm;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    text-decoration: none !important;
+
+  }
+}
+
+.btn-shine {
+  border: 1px solid $primary-electric;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: $border-radius;
+  font-size: small;
+  @include shining(4px, $primary-electric);
+}
+
+.btn-shine-sm {
+  border: 1px solid $primary-electric;
+  align-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: $border-radius;
+  font-size: $font-size-xs;
+  @include shining(4px, $primary-electric);
+}

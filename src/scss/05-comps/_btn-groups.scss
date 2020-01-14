@@ -1,0 +1,47 @@
+
+.btn-group{
+  button {
+    border-radius: $btn-border-radius-xs ;
+    font-size: $font-size-xs;
+    padding: 0.125rem 0.135rem;
+    cursor: pointer;
+    float: left;
+    a {
+      color: black;
+      &:hover{
+        color: #e5e5e5;
+      }
+    }
+  }
+  > .btn-success{
+    background-color: $success;
+    border: 1px solid $success-muted;
+    &:hover {
+      background-color: $success-muted;
+      border: 1px solid $success;
+
+    }
+  }
+  > .btn-delete{
+    background-color: $danger;
+    border: 1px solid $danger-muted;
+    &:hover {
+      background-color: $danger-muted;
+      border: 1px solid $danger;
+
+    }
+  }
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+  margin-bottom: 0.25rem;
+}
+

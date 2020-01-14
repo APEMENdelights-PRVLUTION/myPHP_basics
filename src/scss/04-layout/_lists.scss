@@ -1,0 +1,31 @@
+
+ul {
+  padding: 0.75rem;
+  border: 1px solid #e5e5e5 ;
+  list-style: none;
+
+  > li {
+    font-size: $font-size-xs;
+    > a {
+      color: $headline-color;
+      font-size: $font-size-lg;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover{
+        color: $link-color;
+      }
+    }
+    button{
+      &:after{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &:last-of-type{
+    margin-bottom: 40px;
+
+  }
+}
+
+

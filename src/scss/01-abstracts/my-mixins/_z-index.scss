@@ -1,0 +1,28 @@
+// —————————————————————————————————————————————————————————
+//  z-Index/z  v.1.0.0
+// —————————————————————————————————————————————————————————
+//  Function and mixin to return the z-index
+//  from $z-layers (map or list)
+$z-layers: (
+        'background'          : 1,
+        'background-overlay'  : 2,
+        'page-content'        : 3,
+        'page-footer'         : 4,
+        'page-header'         : 5,
+        'page-navigation'     : 6,
+        'modal-window'        : 7
+) !default;
+
+@function z-index($name){
+  $z: null;
+  @if type-of($z-layers) == map { $z: map-get($z-layers, $name); }
+  @if type-of($z-layers) == list { @for $i from 1 through length($z-layers) { @if nth($z-layers, $i) == $name { $z: $i; } } }
+  @if $z { @return $z; }
+  @else { @error('Could not find a z-index for `#{$name}`'); }
+}
+@mixin z-index($name){ z-index: z-index($name); }
+
+// Short hands – if you are lazy ;-)
+@function z($arglist...){ @return z-index($arglist...); }
+@mixin z($arglist...){ @include z-index($arglist...); }
+

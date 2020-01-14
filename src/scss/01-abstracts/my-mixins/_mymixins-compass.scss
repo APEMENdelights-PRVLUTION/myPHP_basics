@@ -1,0 +1,14 @@
+@import "../../07-vendor/compass/css3/transition";
+
+
+@mixin hover-visiblity-hidden($duration: 0.333s) {
+  visibility: hidden;
+  opacity: 0;
+  @include transition(opacity visibility, $duration, ease);
+
+}
+
+@mixin hover-visibility-visible() {
+  visibility: visible;
+  opacity: 1;
+}

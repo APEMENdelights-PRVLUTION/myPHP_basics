@@ -1,0 +1,23 @@
+table{
+  border: solid 1px black;
+
+    th{
+    padding: 5px;
+    background-color: black;
+    }
+
+
+  tr{
+    padding: 0.125rem;
+    background-color: #333;
+    color: white;
+    font-family: $font-fam-base;
+    font-size: 0.75rem;
+  }
+
+  td{
+    font-size: 0.75rem;
+    width:auto;
+    padding: 0.125rem;
+  }
+}

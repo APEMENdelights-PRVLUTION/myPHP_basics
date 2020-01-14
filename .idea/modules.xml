@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/php_basics.iml" filepath="$PROJECT_DIR$/.idea/php_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mySQL_basics.iml" filepath="$PROJECT_DIR$/.idea/mySQL_basics.iml" />
     </modules>
   </component>
 </project>

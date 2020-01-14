@@ -1,0 +1,12 @@
+
+
+// —————————————————————————————————————————————————————————
+//  Clearfix v.2.0.0
+// —————————————————————————————————————————————————————————
+@mixin layout-clear        { overflow: auto; }
+@mixin layout-clear-both   { &:before, &:after { content:''; display: table; clear: both; } }
+@mixin layout-clear-after  { &:after  { content:''; display: table; clear: both; } }
+@mixin layout-clear-before { &:before { content:''; display: table; clear: both; } }
+@mixin layout-clearfix     { @include layout-clear; }
+@mixin clearfix { @include layout-clear }
+

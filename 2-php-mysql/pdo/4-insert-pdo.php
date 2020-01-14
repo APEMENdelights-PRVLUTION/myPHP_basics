@@ -2,7 +2,9 @@
 $servername = "localhost";
 $username = "username";
 $password = "password";
-$dbname = "myDB";
+$dbname = "db_tutorial";
+
+
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);

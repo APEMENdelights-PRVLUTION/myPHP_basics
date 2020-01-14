@@ -1,0 +1,39 @@
+@mixin bg-crawl-R2L($bg-width, $dur-bg-animation, $iterationCount){
+  @keyframes bg-Crawl-R2L {
+    0% {
+      background-position:0 0;
+    }
+    100%{
+      background-position:-$bg-width 0;
+    }
+  }
+  // object.style.animation = "name duration timingFunction delay iterationCount direction fillMode playState"
+  animation: bg-Crawl-R2L $dur-bg-animation linear $iterationCount;
+  // usage: body {
+  //  background-image:linear-gradient(transparent,transparent 350px,rgba(white,.9) 350px,rgba(black,.8)), url('../assets/textures/stars_dzyjfk.jpg');
+  //  background-position:0 0;
+  //  background-size:2000px auto;
+  //  //animation: bg-Crawl-R2L 60s linear infinite;
+  //  @include bg-crawl-R2L(2000px, 60s, infinite)
+  //}
+}
+
+@mixin bg-crawl-L2R($bg-width, $dur-bg-animation, $iterationCount){
+  @keyframes bg-Crawl-L2R {
+    0% {
+      background-position:0 0;
+    }
+    100%{
+      background-position: $bg-width 0;
+    }
+  }
+  // object.style.animation = "name duration timingFunction delay iterationCount direction fillMode playState"
+  animation: bg-Crawl-L2R $dur-bg-animation linear $iterationCount;
+  // usage: body {
+  //  background-image:linear-gradient(transparent,transparent 350px,rgba(white,.9) 350px,rgba(black,.8)), url('../assets/textures/stars_dzyjfk.jpg');
+  //  background-position:0 0;
+  //  background-size:2000px auto;
+  //  //animation: bg-Crawl-R2L 60s linear infinite;
+  //  @include bg-crawl-R2L(2000px, 60s, infinite)
+  //}
+}

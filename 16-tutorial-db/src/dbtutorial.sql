@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS 'dbtutorial';
-
-CREATE TABLE `countries` (
+CREATE DATABASE `dbtutorial`;
+USE `dbtutorial`;
+CREATE TABLE IF NOT EXISTS`countries` (
     `country` varchar(30) DEFAULT NULL,
     `capital` varchar(30) DEFAULT NULL,
     `continent` enum('Africa','Asia','Oceania','Europe','North-America','South-America')

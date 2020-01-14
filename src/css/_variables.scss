@@ -1,0 +1,24 @@
+
+$success: #35ff00;
+$success-muted: #1e9100;
+$danger: #ff2400;
+
+$btn-border-xs: 1px;
+$btn-border-width-xs: 1px;
+$border-radius-xs: 3px;
+$btn-border-radius-xs: $border-radius-xs;
+
+$danger-muted: #9c1400;
+$btn-bg-success: $success;
+$btn-bg-color: #1a1a1a;
+$btn-color: invert($btn-bg-color,100);
+$btn-border-color: darken($success, 80);
+
+
+
+$font-size-xs: 0.75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$link-color: #ff0099;
+$link-color-hover: adjust_hue($link-color, 270deg);
+$headline-color: #f9f9f8;

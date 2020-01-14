@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="localdemoi">
+  <component name="PublishConfigData" serverName="local">
     <serverData>
-      <paths name="localdemoi">
+      <paths name="local">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/_00-myscripts/php_basics" />
+            <mapping local="$PROJECT_DIR$" web="/mySQL_basics" />
           </mappings>
         </serverdata>
       </paths>
